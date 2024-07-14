@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Pause video in tab switch",
+    "author" : "Mystic_soul , Nobita_only", 
+    "version": "1.0",
+    "description": "Pauses videos when tabs are inactive.",
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "*"
+    ]
+  }
+  
